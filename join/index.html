@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165010921-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-165010921-1', { 'anonymize_ip': true });
+    </script>
+    <script src="https://kit.fontawesome.com/199867d2e2.js" crossorigin="anonymous"></script>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+
+    <!-- Primary Meta Tags -->
+    <title>Occupancy App - Join</title>
+    <meta name="title" content="Occupancy App - An open source, multi-client occupancy counter">
+    <meta name="description" content="Occupancy is a free-to-use, multi-client counter to keep track of how many people you have in your space.
+    It's safe, secure, and simple.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://occupancyapp.com/">
+    <meta property="og:title" content="Occupancy App - An open source, multi-client occupancy counter">
+    <meta property="og:description" content="Occupancy is a free-to-use, multi-client counter to keep track of how many people you have in your space.
+    It's safe, secure, and simple.">
+    <meta property="og:image" content="/occupancy_promo_sized.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://occupancyapp.com/">
+    <meta property="twitter:title" content="Occupancy App - An open source, multi-client occupancy counter">
+    <meta property="twitter:description" content="Occupancy is a free-to-use, multi-client counter to keep track of how many people you have in your space.
+    It's safe, secure, and simple.">
+    <meta property="twitter:image" content="/occupancy_promo_sized.png">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/loaders.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+
+    <!-- Favicons
+    ================================================== -->
+  </head>
+  <body >
+
+    <div class="bmd-layout-container bmd-drawer-f-l">
+      <header class="bmd-layout-header">
+        <div class="navbar navbar-light bg-color">
+          <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">
+            <span class="sr-only">Toggle drawer</span>
+            <i class="material-icons">menu</i>
+          </button>
+          <div class="nav-center">
+            <ul class="nav navbar-nav">
+              <a class="nav-color" href="/"><li class="nav-item">Occupancy</li></a>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div id="dw-s1" class="bmd-layout-drawer bg-faded">
+        <header>
+          <a class="navbar-brand" style="color:#008466 !important;"><img class="logo-icon" src="https://commandercodingpublic.s3-us-west-2.amazonaws.com/logo_idea.png">&nbsp;Occupancy</a>
+        </header>
+        <ul class="list-group nav-links">
+          <a href="/" class="list-group-item">Start a Space</a>
+          <a href="/join" class="list-group-item">Join an Existing Space</a>
+          <a href="/#footer" class="list-group-item">How Can I Help?</a>
+          <a href="/about" class="list-group-item">About</a>
+        </ul>
+      </div>
+      <main class="bmd-layout-content">
+        <div class="container">
+          <br>
+          <br>
+          <div>
+            <h3>Join a Space</h3>
+            <hr>
+            <div class="">
+              <form id="join">
+                <div class="form-group">
+                  <label for="spaceid" class="bmd-label-floating">Space ID</label>
+                  <input type="text" class="form-control" id="spaceid">
+                </div>
+                <div class="form-group d-none" id="password-group">
+                  <label for="password" class="bmd-label-floating">Password</label>
+                  <input type="text" class="form-control" id="password">
+                </div>
+                <br>
+                <div class="center">
+                  <button class="btn btn-raised btn-engage">
+                      Join
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
+        <div class="container">
+          <br>
+          <br>
+          <div>
+            <h3>Some Directions Please</h3>
+            <hr>
+            <h4>I need to join an existing space</h4>
+            <p>You're in the right place.  Enter the space id and password (if applicable) in the form above and click "Join".</p>
+            <p>Space IDs and passwords can be kinda long though (not to mention the random characters), so we definitely suggest whoever is currently in the space to copy the link and join that way.  They can also pull up a QR code for you to scan on your device.</p>
+            <br>
+            <h4>I don't need to join an existing space</h4>
+            <p>No worries, head on back to the <a href="/">home page</a> and start up a new space using the form at the top.</p>
+            <br>
+          </div>
+          <br>
+          <br>
+        </div>
+      </main>
+    </div>
+    <footer id="footer" name="footer">
+      <div class="container">
+        <h3>Like What You See?</h3>
+        <hr>
+        <h4>Spread the Word</h4>
+        <p>Please help us get the word around by sharing on your social channels.</p>
+        <p>It’s a small thing, but we honestly feel this can help keep the world safer in it’s own small little way.</p>
+        <br>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Foccupancyapp.com&amp;title=&amp;summary=&amp;source=https%3A%2F%2Foccupancyapp.com" target="_blank" rel="noopener"><i style="color:#0072b1;" class="fab fa-linkedin fa-3x"></i></a>
+          <a href="https://twitter.com/intent/tweet/?text=&amp;url=https%3A%2F%2Foccupancyapp.com" target="_blank" rel="noopener"><i style="color:#1DA1F2;" class="fab fa-twitter fa-3x"></i></a>
+          <a href="mailto:?subject=&amp;body=https%3A%2F%2Foccupancyapp.com" target="_self" rel="noopener"><i class="far fa-envelope fa-3x"></i></a>
+          <a href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Foccupancyapp.com" target="_blank" rel="noopener"><i style="color:#3b5998;" class="fab fa-facebook-square fa-3x"></i></a>
+        </div>
+        <br>
+        <br>
+        <h4>Donations</h4>
+        <p>Currently we’re funding this project out of pocket because we feel it’s worth it.  However, if you like it and want to support it, we definitely appreciate it.</p>
+        <p>Patreon</p>
+        <a href="https://www.patreon.com/bePatron?u=34549934" data-patreon-widget-type="become-patron-button">Support us through Patreon</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+        <br>
+        <p>Paypal / Credit Card</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="GEM5TYW423P8L" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+          <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+        <p>*Please note that we are not a charitable organization, any donations given are NOT tax deductible, but they do help us keep this service alive and make improvements to it.</p>
+
+      </div>
+      <br><br>
+    </footer>
+    </div>
+  </div>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
