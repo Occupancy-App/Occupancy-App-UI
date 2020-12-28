@@ -41,7 +41,7 @@ $(function () {
       $('.edit-col, .user, #edit-max, #max-change, #qrmodal').remove();
     }
     if($location){
-      var $url = "https://65f34f5dz4.execute-api.us-east-1.amazonaws.com/dev/space/"  + $location;
+      var $url = "https://api.occupancyapp.com/space/"  + $location;
 
       callWorker($url, "GET", updateRoom);
       roomCheck = setTimeout(function(){ processURL() }, 2000);
@@ -66,7 +66,7 @@ $(function () {
     }else{
       $name = "";
     }
-    var $url= "https://65f34f5dz4.execute-api.us-east-1.amazonaws.com/dev/space/new/occupancy/current/"+$total+"/max/" + $max + $name;
+    var $url= "https://api.occupancyapp.com/space/new/occupancy/current/"+$total+"/max/" + $max + $name;
 
 
     callWorker($url, "PUT", function(returnData){
@@ -82,7 +82,7 @@ $(function () {
     var $total = Number($('#current').text());
     if(($total - 1) >= 0){
       var $location = new URL(window.location).searchParams.get("i");
-      var $url = "https://65f34f5dz4.execute-api.us-east-1.amazonaws.com/dev/space/"+$location+"/decrement";
+      var $url = "https://api.occupancyapp.com/space/"+$location+"/decrement";
       $('.blur').removeClass('d-none');
 
       roomCheck = null;
@@ -97,7 +97,7 @@ $(function () {
     e.preventDefault();
 
     var $location = new URL(window.location).searchParams.get("i");
-    var $url = "https://65f34f5dz4.execute-api.us-east-1.amazonaws.com/dev/space/"+$location+"/increment";
+    var $url = "https://api.occupancyapp.com/space/"+$location+"/increment";
     $('.blur').removeClass('d-none');
 
     roomCheck = null;
@@ -108,7 +108,7 @@ $(function () {
   $('#max-value-form').submit(function(){
     var $max = parseInt($('#max-value').val());
     var $location = new URL(window.location).searchParams.get("i");
-    var $url = "https://65f34f5dz4.execute-api.us-east-1.amazonaws.com/dev/space/"+$location+"/max/" + $max;
+    var $url = "https://api.occupancyapp.com/space/"+$location+"/max/" + $max;
 
    $('.blur').removeClass('d-none');
    callWorker($url,"PUT", updateRoom);
